@@ -11,7 +11,7 @@ public class ShareLaneTest {
     public void fillZipCodeFieldTest(){
         System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver");
         WebDriver  driver = new ChromeDriver();
-        driver.get("https://www.sharelane.com/cgi-bin/register.py"); // открывем страницу в браузере хром
+        driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("888888");
         driver.findElement(By.xpath("//*[@value='Continue']")).click();
 
