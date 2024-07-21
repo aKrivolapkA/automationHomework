@@ -23,7 +23,7 @@ public class ShareLaneTest {
         driver.findElement(By.name("password2")).sendKeys("password");
 
         driver.findElement(By.xpath("//*[@value= 'Register']")).click();
-        driver.quit(); //автомаическое закрытие браузера
+        driver.quit();
 
 
     }
